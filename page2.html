@@ -10,39 +10,55 @@
       min-height: 100%;
       background: white;
     }
+
     body {
       box-sizing: border-box;
       min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
       flex-direction: column;
       font-family: sans-serif;
       padding: 30px;
     }
+
     h1 {
       font-size: clamp(22px, 5vw, 42px);
       font-weight: normal;
+      margin-bottom: 25px;
     }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    img {
+      width: min(80vw, 650px);
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
     p {
       opacity: .6;
     }
-    img {
-      width: min(80vw, 650px);
-      max-height: 65vh;
-      object-fit: contain;
-    }
+
     a {
       margin-top: 25px;
       color: inherit;
     }
   </style>
 </head>
+
 <body>
-  <!-- ここから自由に編集できます -->
   <h1>ページ 2</h1>
 
-  <img src="image.png" alt="画像">
+  <div class="gallery">
+    <img src="IMG_20260901_213817_711.jpg" alt="画像 1">
+    <img src="IMG_20260901_213818_900.jpg" alt="画像 2">
+  </div>
 
   <p>ここには好きなものを追加できます。</p>
 
